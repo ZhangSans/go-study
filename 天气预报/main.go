@@ -1,7 +1,7 @@
 package main
 
 import (
-	`encoding/json`
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	// "net/http"
@@ -26,16 +26,38 @@ func main() {
 		fmt.Println("读取城市code码错误", err)
 		return
 	}
+
 	// cityStr := fmt.Sprintf("%s", json)
 	// fmt.Println(cityMap)
-	var cityMap map[string]interface{}
+	var cityMap []map[string]interface{}
 	err = json.Unmarshal([]byte(jsonStr), &cityMap)
 	if err != nil {
 		fmt.Println("读取城市code码解析json错误", err)
 	}
+	var nameValue string
+	var codeValue string
 	for _, v := range cityMap {
-		fmt.Println(v)
-		break
+		if cityInfo,ok := v.(map[string]interface{});ok{
+			
+		}
+
+
+		if cityCode, ok := v["city_code"]; ok {
+			codeValue = cityCode
+		}
+		if cityName, ok := v["city_name"]; ok {
+			nameValue = cityName
+		}
+		if cityName != nil && cityCode != nil {
+
+		}
+
+		// for k, v1 := range v {
+		// 	fmt.Println(k,v1)
+		// 	break
+		// }
+		// fmt.Println(v["city_code"])
+		// break
 	}
 
 	// json = string(json)

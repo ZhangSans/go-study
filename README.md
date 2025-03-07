@@ -119,7 +119,7 @@ https://blog.csdn.net/ruzhila/article/details/139848816
 
 参考项目：[简易词典]15。
 https://www.cnblogs.com/yltfy1998/p/16261276.html
-
+https://zhuanlan.zhihu.com/p/625823834
 5. 简易代理服务器
 功能：实现一个基于 Socks5 协议的简易代理服务器，支持客户端通过代理访问目标服务器。
 

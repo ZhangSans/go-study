@@ -51,7 +51,16 @@ func main() {
 			fmt.Println("读取请求数据失败", err)
 			return
 		}
-		fmt.Println(response.Status)
-		fmt.Println(string(str))
+		// fmt.Println(response.Status)
+		var responseMap map[string]interface{}
+		err = json.Unmarshal([]byte(str), &responseMap)
+		if err != nil {
+			fmt.Println("解析请求数据失败", err)
+			return
+		}
+		fmt.Println("翻译结果：", responseMap["target"])
+		fmt.Sprintf("\r\n")
+
+		// fmt.Println(string(str))
 	}
 }

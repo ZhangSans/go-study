@@ -112,19 +112,6 @@ https://blog.csdn.net/weixin_42940826/article/details/82386275
 https://blog.csdn.net/ruzhila/article/details/139848816
 
 
-4. 简易词典
-功能：通过命令行输入单词，调用翻译 API 返回翻译结果。
-
-技术点：net/http 包、json 包、goroutine 并发调用 API。
-
-代码量：约 100 行。
-
-学习价值：学习 HTTP 请求、JSON 解析和并发编程。
-
-参考项目：[简易词典]15。
-https://www.cnblogs.com/yltfy1998/p/16261276.html
-https://zhuanlan.zhihu.com/p/625823834
-https://docs.caiyunapp.com/lingocloud-api/
 5. 简易代理服务器
 功能：实现一个基于 Socks5 协议的简易代理服务器，支持客户端通过代理访问目标服务器。
 
